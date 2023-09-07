@@ -9,6 +9,7 @@ let gameState = 0;
 function startGame() {
   // Function to update the game based on player choices
   switch (gameState) {
+    //Introduction and initial decision
     case 0:
       gameText.textContent =
         "Snow White and her seven dwarfs stood before the spaceship's holographic display, pondering their next destination for this cosmic adventure.";
