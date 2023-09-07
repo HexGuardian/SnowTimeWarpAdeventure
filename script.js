@@ -20,16 +20,21 @@ function startGame() {
         "Snow White was captivated by the idea of exploring the magnificent rings of Saturn. 'Let's go to Saturn, she decided with a sense of wonder'.The spaceship's engines roared to life as it soared through the vastness of space. As they approached Saturn, they marveled at the rings, which glistened like a crown of jewels. They had chosen wisely, and their hearts filled with awe. 'You've arrived at Saturn's rings. What do you want to do next?'";
       choiceButton1.textContent =
         "Take a closer look at the rings: Fly the spaceship closer to Saturn's rings to examine them in detail.";
-      choiceButton2.text =
+      choiceButton2.textContent =
         "Search for a moon to explore: Look for one of Saturn's moons to land on and investigate.";
       break;
-    case 3:
+    case 2:
       gameText.textContent =
         "Grumpy was cautious about the dangers of space but considered a distant nebula a safer choice. 'Let's go to that nebula,' he suggested reluctantly. The spaceship smoothly transitioned into warp speed, and they found themselves surrounded by swirling colors and mesmerizing cosmic clouds within the nebula. It was a breathtaking sight.'You're inside the nebula. What's your next move?'";
       choiceButton1.textContent =
         "Investigate the nebula's unique properties: Analyze the nebula's composition and gather data.";
       choiceButton2.textContent =
         "Spot a mysterious celestial object: Focus your attention on a peculiar formation within the nebula.";
+      break;
+    case 3:
+      gameText.textContent = "generic text1'";
+      choiceButton1.textContent = "generic choice 1.";
+      choiceButton2.textContent = "generic choice 2.";
       break;
   }
 }
