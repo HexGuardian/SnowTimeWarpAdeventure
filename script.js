@@ -11,31 +11,53 @@ function startGame() {
   switch (gameState) {
     //Introduction and initial decision
     case 0:
-      gameText.textContent =
-        "Snow White and her seven dwarfs stood before the spaceship's holographic display, pondering their next destination for this cosmic adventure.";
-      choiceButton1.textContent = "Explore the Rings of Saturn";
-      choiceButton2.textContent = "Visit a Distant Nebula";
+      gameText.innerHTML = `<p>As you slip into Snow White's shoes, you find yourself standing before the menacing Queen's palace, the first chapter of your timeless journey. The jealous Queen's wicked intentions are clear: she has ordered her loyal huntsman to end your life.
+      <p> <p>In a twist of fate, the huntsman, struck by a sudden surge of compassion, decides to reveal the Queen's sinister plot to you. You now face a crucial choice:<p> 
+      <ol> 
+      <li>Option 1: Escape to the Enchanted Forest: Embrace your newfound knowledge and flee into the mystical depths of the Enchanted Forest, seeking refuge amidst its towering trees and whimsical creatures. Here, you'll begin your quest to unravel the secrets of the fairytale world.</li>
+      <li>Option 2: Confront the Malevolent Queen: Confront the Queen head-on, challenging her wickedness and demanding answers. But be warned, the path to confronting the Queen is fraught with danger and intrigue.</li>
+      </ol>`;
+
+      choiceButton1.textContent = "Escape to the Enchanted Forest:";
+      choiceButton2.textContent = "Confront the Malevolent Queen";
       break;
+
     case 1:
-      gameText.textContent =
-        "Snow White was captivated by the idea of exploring the magnificent rings of Saturn. 'Let's go to Saturn, she decided with a sense of wonder'.The spaceship's engines roared to life as it soared through the vastness of space. As they approached Saturn, they marveled at the rings, which glistened like a crown of jewels. They had chosen wisely, and their hearts filled with awe. 'You've arrived at Saturn's rings. What do you want to do next?'";
-      choiceButton1.textContent =
-        "Take a closer look at the rings: Fly the spaceship closer to Saturn's rings to examine them in detail.";
-      choiceButton2.textContent =
-        "Search for a moon to explore: Look for one of Saturn's moons to land on and investigate.";
+      //Snow White escapes to the enchanted forest
+      gameText.innerHTML = `<p>With wisdom guiding your actions, you decide to avoid a direct confrontation with the malevolent Queen. Instead, you quietly slip away from the castle and into the depths of the Enchanted Forest.</p>
+      <p>As you meander through the ancient woods, the eerie calm is broken by a sudden rustling. Your heart races as you peer through the trees and discover a quaint cottage nestled among the foliage.</p>
+      <p>Now, you face a pivotal crossroads:</p>
+      <ol>
+      <li>Option 1: Enter the Mysterious Cottage: Curiosity gets the better of you, and you cautiously approach the cottage's welcoming, yet enigmatic, door. Who resides within, and will they offer you shelter and guidance?</li>
+      <li>Option 2: Continue Your Journey: The forest stretches endlessly before you, concealing its secrets. You could choose to brave the wilderness, seeking answers elsewhere. But be mindful, the woods hold their own perils, and safety may not be guaranteed.</li>
+      </ol>`;
+      choiceButton1.textContent = "Enter the Mysterious Cottage";
+      choiceButton2.textContent = "Continue Your Journey.";
       break;
     case 2:
-      gameText.textContent =
-        "Grumpy was cautious about the dangers of space but considered a distant nebula a safer choice. 'Let's go to that nebula,' he suggested reluctantly. The spaceship smoothly transitioned into warp speed, and they found themselves surrounded by swirling colors and mesmerizing cosmic clouds within the nebula. It was a breathtaking sight.'You're inside the nebula. What's your next move?'";
-      choiceButton1.textContent =
-        "Investigate the nebula's unique properties: Analyze the nebula's composition and gather data.";
-      choiceButton2.textContent =
-        "Spot a mysterious celestial object: Focus your attention on a peculiar formation within the nebula.";
+      //Enter the mysterious cottage.
+      gameText.innerHTML = `<p>Overwhelmed by hunger and exhaustion, you decide to take a chance and enter the mysterious cottage. To your astonishment, the door opens with a gentle creak, revealing a cozy interior bathed in warm, welcoming light.</p>
+      <p>Your senses are immediately tantalized by the aroma of hot food simmering on the stove. Without hesitation, you enjoy a much-needed meal and, overcome by weariness, push three of the uniquely small beds together for a nap.</p>
+      <p>As you awaken from your slumber, you are greeted by a surprising sight: seven dwarfs, each with distinct personalities, gazing at you with curiosity and concern.</p>
+      <p>Now, you find yourself at a crucial juncture:</p>
+      <ol>
+      <li>Option 1: Return to the Enchanted Forest: You could slip away unnoticed, leaving the cottage and the dwarfs behind, and continue your journey through the forest. The woods hold mysteries of their own, and your destiny remains your own.</li>
+      <li>Option 2: See If the Dwarfs Are Friendly: Perhaps the dwarfs can offer assistance, guidance, or even companionship. You could choose to stay and interact with them, forging new alliances and deepening your connection to this enchanting world.</li>
+      </ol>`;
+      choiceButton1.textContent = "Return to the Enchanted Forest";
+      choiceButton2.textContent = "See If the Dwarfs Are Friendly";
       break;
     case 3:
-      gameText.textContent = "generic text1'";
-      choiceButton1.textContent = "generic choice 1.";
-      choiceButton2.textContent = "generic choice 2.";
+      //Return to the Enchanted Forest after meeting the dwarfs
+      gameText.innerHTML = `<p>With a sense of unease at the peculiar dwarfs' presence, you quietly slip away from the cottage and venture back into the Enchanted Forest, determined to take your chances in its depths.</p>
+      <p>Hours pass as you wander through the enchanting wilderness, hoping to stumble upon another refuge. But despite your best efforts, you find yourself returning to the very spot where you initially entered the enchanted forest.</p>
+      <p>Now, at this crucial crossroads:</p>
+      <ol>
+      <li>Option 1: Return to the Castle: You can decide to brave the treacherous path back to the castle, facing the malevolent Queen's potential wrath. Perhaps your knowledge of the Queen's intentions will help you navigate her treacherous world.</li>
+      <li>Option 2: Search for a Nearby Village: Instead of risking a return to the castle, you choose to seek out the company of friendly villagers who might provide assistance and refuge. It's a leap of faith, but you hope to find kindness and safety beyond the forest's mysterious veil.</li>
+      </ol>`;
+      choiceButton1.textContent = "Return to the Castle";
+      choiceButton2.textContent = "Search for a Nearby Village";
       break;
   }
 }
