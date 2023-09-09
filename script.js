@@ -85,17 +85,12 @@ function startGame() {
       gameText.innerHTML = `<p>In the cozy cottage, your days pass harmoniously with the seven dwarfs. Despite initial fears, you discover their warmth and kindness, even Grumpy's, who softens in your presence. You offer your culinary and housekeeping skills in exchange for shelter, and a unique bond forms. They become your family in this quaint and hidden corner of the forest.</p>
 
     <p>However, unbeknownst to you, the malevolent Queen, through her magic mirror, discovers that you are alive. Her wicked plans to eliminate you once and for all are set in motion.</p>
-    
     <p>In response to the looming threat, the dwarfs caution you not to open the door to anyone other than them when they venture out to cut wood. Their warning echoes in your mind.</p>
-    
     <p>One day, while you are alone in the cottage, a soft but persistent knock echoes from the door. In this pivotal moment, you stand before the closed door, torn between your sense of compassion and the dwarfs' stern warning. The memory of the dwarfs' kindness and their status as your newfound family weighs heavily on your heart.</p>
-
     <p>Yet, the dire threat posed by the malevolent Queen and the dwarfs' unwavering caution echo in your mind. You recall the evil Queen's relentless pursuit, and the knowledge that she will stop at nothing to ensure your demise.</p>
-    
     <p>With a deep breath, you make a choice:</p>
     <ol>
     <li>Option 1: Follow the Dwarfs' Warning: You remember the dwarfs' clear instructions and decide not to open the door, choosing to remain cautious and keep yourself safe from potential danger.</li>
-    
     <li>Option 2: Open the Door Out of Compassion: Your compassionate nature compels you to open the door, driven by the thought that it could be a lost soul seeking help in the vast and mysterious forest. Despite the risk, your heart guides your actions.</li>
     </ol>`;
       choiceButton1.textContent = "Follow the Dwarfs' Warning";
@@ -222,7 +217,7 @@ function startGame() {
       choiceButton2.textContent = "Exit the game";
       break;
     case 17:
-      //Seek Help elsewhere
+      //Seek Help elsewhere from the dwarfs
       gameText.innerHTML = `<p>the dwarfs offer of assistance was both a lifeline and a dilemma. Their unique magical abilities could aid you in vanquishing the Malevolent Queen, but the price they demanded, control over the enchanted forest, weighed heavily on your heart.</p>
       <p>With gratitude, you declined their offer and turned to a loyal soldier for counsel. Moved by pity, the dwarfs proposed a daring plan: journey to a neighboring kingdom where a young prince sought a bride. Marrying him might secure the support needed to confront the Queen.</p>
       <p>Weeks of travel left you hungry, weary, and desperate, but finally, you reached the neighboring kingdom. Fate took an unexpected turn when the prince, entranced by your beauty, fell in love. Your words convinced him of your royal lineage, and he pledged his unwavering support.</p>
@@ -232,6 +227,17 @@ function startGame() {
       choiceButton2.textContent = "Exit the game";
       break;
     case 18:
+      //Choice 13: Decline the offer made by the soldier
+      gameText.innerHTML = `<p>In the face of the soldier's offer, you held firm to your conviction, believing that accepting his help might be a hidden ploy of the Malevolent Queen, one that could ultimately spell your doom. Deep down, you also clung to the hope that your father, despite the Queen's enchantment, would ensure you received a fair trial.</p>
+      <p>Regrettably, the soldier, disappointed by your refusal, departed, and you never received such an offer again. Your fate was sealed, and you spent your days in the dungeon, forgotten by the world, as the Malevolent Queen's influence gradually erased you from your father's memory and the kingdom's collective consciousness.</p>
+      <p>Years turned into decades, and in your old age, a new king, unaware of your true identity, took pity on the wretched prisoner in the dungeon. He ordered your release, an act of kindness that left you broken, unable even to articulate your past.</p>
+      <p>Cast adrift, you wandered into the enchanted forest, where fate once again intervened. In the heart of the woods, you stumbled upon a quaint cottage inhabited by seven dwarfs. Moved by your plight, they invited you to stay, offering you the simple comforts of their humble abode.</p>
+      <p>In the twilight of your life, you found solace and companionship among the dwarfs, sharing in their daily routines and the warmth of their company. Yet, as your days drew to a close, your thoughts often drifted to the soldier, pondering how your destiny might have unfolded had you chosen to escape with him.</p>
+      <p>Your story became one of bittersweet reflection, a tapestry woven with the threads of choices made and the haunting specter of what might have been.</p>`;
+      choiceButton1.textContent = "Go to the very beginning";
+      choiceButton2.textContent = "Exit the game";
+      break;
+    case 19:
       //Case 14 - Request to Visit a Nearby Village
       gameText.innerHTML = `<p>Despite the soldier's insistence that the dwarfs could be of assistance, your confidence wavered. How could they, living secluded in the heart of the forest, offer meaningful aid? With your conviction firm, you persuaded the soldier to take you to a nearby village, where you hoped to gather allies.</p>
       <p>Reluctantly, the soldier obeyed your wishes and guided you to the village of his childhood. There, he placed you in the care of one of his friends, promising to return with additional help. He left you with hope in your heart and assurances from his friend that you would be protected.</p>
@@ -241,9 +247,65 @@ function startGame() {
       choiceButton1.textContent = "Go to the very beginning";
       choiceButton2.textContent = "Exit the game";
       break;
-    case 19:
+    case 20:
       //Case 12 - Hide in plain sight
-      gameText.HTML = ``;
+      gameText.innerHTML = `<p>In the shadows of the castle, disguised as a servant, you found wisdom in the Huntsman's advice to hide in plain sight and gather allies discreetly. Your fear of the Malevolent Queen's magic mirror was well-founded, but the Huntsman offered you a glimmer of hope in the form of a trinket, a relic from his friends in the enchanted forest who were masters of magic.</p>
+      <p>With the enchanted trinket in your possession and the Huntsman as your steadfast ally, you successfully concealed yourself from the Queen's ever-watchful gaze. In the guise of a servant, you navigated the castle's intricate corridors, gathering information and waiting for the right opportunity to strike.</p>
+      <p>Then, one fateful day, an unexpected chance presented itself. You found yourself in the Malevolent Queen's private chambers, where a silk cloth concealed a mysterious object. As you unveiled it, you came face to face with the magic mirror itself. To your astonishment, the mirror spoke to you, claiming to be a powerful sorcerer trapped by the Queen's malevolent magic. It sought your help for liberation and pledged to aid you in defeating the Malevolent Queen in return. The offer hung in the air, tempting and uncertain.</p>
+      <ol>
+      <li>Option 1: You decide to trust the mirror's words, believing that a common enemy might make for a powerful ally. You promise to free the sorcerer and forge an alliance to defeat the Malevolent Queen.</li>
+      <li>Option 2: Despite the mirror's pleas, you remain skeptical. The Queen's dark magic runs deep, and trusting the very object she used might be a grave mistake. You choose to continue your quest for allies through more conventional means.</li>
+      </ol>`;
+      choiceButton1.textContent = "Trust the Mirror";
+      choiceButton2.textContent = "Distrust the Mirror";
+      break;
+    case 21:
+      //You decide to trust the mirror
+      gameText.innerHTML = `<p>Your decision to trust the mirror, despite your initial misgivings, led you down a treacherous path. You believed that using the very source of the Queen's power against her was a brilliant strategy. The mirror, delighted with your answer, revealed a dark secret: the Queen's power came from feeding her own blood to the mirror, and you could gain the same power by doing so. However, the mirror issued a grave warning, cautioning you about the addictive allure of the magic. You had to willingly give up your newfound power once the Queen was defeated in order to free the sorcerer trapped within.</p>
+      <p>Driven by your eagerness to defeat the Malevolent Queen and reclaim your kingdom, you fed the mirror a drop of your blood. Instantly, you were filled with an overwhelming rush of magic. With your newfound power, you effortlessly defeated the Queen, who had lost her connection to the mirror's magic.</p>
+      <p>But the mirror's warning about the addictive nature of the magic proved true. When the time came for you to relinquish your power, you found yourself unable to do so. Desperate to keep your power, you hastily promised the mirror that you would only retain it for one year, just long enough to repair the damage done by the evil Queen.</p>
+      <p>However, the mirror, with its ancient wisdom, knew it was already too late. As the year passed, you walked a dark and perilous path, succumbing to the seductive allure of beauty and power. With your father's passing, you ascended to the throne as a powerful and feared queen. People from far and wide admired your unmatched beauty and potent magic. But over time, your heart grew as cold and cruel as the evil you had once sought to destroy.</p>
+      <p>The cycle continued, and you became the very embodiment of the Malevolent Queen you had vanquished, a ruler whose heart was consumed by darkness and whose thirst for power was unquenchable.</p>`;
+      choiceButton1.textContent = "Go to the very beginning";
+      choiceButton2.textContent = "Exit the game";
+      break;
+    case 22:
+      //You choose to distrust the mirror
+      gameText.innerHTML = `<p>Remaining skeptical of the mirror's pleas, you held onto your doubts. How could you trust the very source of the Malevolent Queen's power? The knowledge that the mirror had seen through your protection, revealing your true identity, only deepened your suspicion.</p>
+      <p>In an act of desperation, you resolved to steal the mirror, as destroying it by conventional means had proven futile. With the assistance of your loyal servants, you executed a daring plan, sneaking the mirror through a labyrinth of secret tunnels, concealed from the Queen's prying eyes. Hoping that she wouldn't immediately discover its disappearance, you sought the counsel of the huntsman to devise a way to obliterate this malevolent artifact.</p>
+      <p>The huntsman, however, grew increasingly concerned for your safety upon discovering the mirror's existence. He offered to take it off your hands, intending to deliver it into the care of his friends in the enchanted forest, who possessed the knowledge to safely destroy it.</p>
+      <p>Reluctant to entrust such a dangerous object to the huntsman, you proposed an alternative plan. Keep the mirror hidden within a long-forgotten, remote part of the castle, effectively severing the Malevolent Queen from her source of power. This way, you reasoned, you might weaken her grip on the kingdom without risking the mirror falling into even more perilous hands.</p>
+      <p>The choice you make now will determine the fate of the mirror and your quest to dethrone the Malevolent Queen.</p>
+      <ol>
+      <li>Option 1: Trusting the huntsman's intentions, you decide to give him the mirror. He will transport it to the enchanted forest for safe destruction.</li>
+      <li>Option 2: Reluctant to part with such a dangerous object, you choose to conceal the mirror within the castle, hoping it will weaken the Malevolent Queen's power.</li>
+      </ol>`;
+      choiceButton1.textContent = "Hand over the mirror to the huntsman";
+      choiceButton2.textContent = "Keep the mirror hidden";
+      break;
+    case 23:
+      //Hand over the mirror to the huntsman
+      gameText.innerHTML = `<p>Trusting in the huntsman's integrity, you handed over the malevolent mirror to him, allowing him to depart with a promise to see it destroyed. As he disappeared into the enchanted forest with the cursed object, hope bloomed in your heart.</p>
+      <p>However, the Malevolent Queen soon discovered the mirror's loss, and madness consumed her. She relentlessly sought it, resorting to tormenting and questioning her servants, sparing no one she found suspicious. Fear gripped the castle as her desperation grew.</p>
+      <p>In your darkest moments, it seemed as though even your most loyal servants might betray you to save themselves from her wrath. The specter of doom loomed ever nearer, threatening to engulf you.</p>
+      <p>But then, when all hope seemed lost, the huntsman returned. With a triumphant air, he claimed that the mirror had met its demise. Skepticism gnawed at your thoughts, but it didn't take long for reality to sink in U+2013 the Malevolent Queen's power had indeed waned.</p>
+      <p>Your father, who had languished under her enchantment for so long, awoke to the horrifying reality of the Queen's monstrous deeds. She was swiftly apprehended, tried, and sentenced to death for her unspeakable crimes. In the wake of her demise, your father welcomed you back with open arms, reuniting a family torn asunder by dark enchantments.</p>
+      <p>The kingdom, at long last, found peace, and you, Snow White, had triumphed over the darkest of sorcery to reclaim your rightful place by your father's side.</p>`;
+      choiceButton1.textContent = "Go to the very beginning";
+      choiceButton2.textContent = "Exit the game";
+      break;
+    case 24:
+      //You decide to keep the mirror hidden
+      gameText.innerHTML = `<p>While you trusted the huntsman, your fear of the mirror's malevolence prevailed, and you convinced him to seal it away in the deepest depths of the secret tunnels within the castle. Though the huntsman harbored doubts and believed the mirror should be destroyed, he ultimately obeyed your wishes.</p>
+      <p>The Malevolent Queen's reaction to her missing mirror was nothing short of madness. She launched a frantic, all-encompassing search, terrorizing the castle in her desperation. Fearing for your life, the huntsman guided you to the enchanted forest, where he introduced you to the seven dwarfs residing in a quaint cottage nestled in the heart of the woods. He assured you that he would return once you were safe.</p>
+      <p>In the company of the dwarfs, you found solace and a sense of belonging. Months turned into a peaceful existence, but as time passed, doubt gnawed at your heart. The huntsman's absence grew long, and you began to fear that he had abandoned you in this remote refuge.</p>
+      <p>However, just as all hope seemed lost, the huntsman returned in triumph. He revealed that the Malevolent Queen's power had waned, and your father had been liberated from her sinister enchantment. Justice was swiftly served, and the Queen met her demise for the countless crimes she had committed.</p>
+      <p>Relieved and overjoyed, you bid farewell to the dwarfs who had become dear friends and family during your time in the enchanted forest. Reunited with your father, you returned home, where all seemed well.</p>
+      <p>Years passed, and you were wed to the huntsman, who had risen to greatness due to his valor during the Malevolent Queen's reign. Together, you ascended to the throne after your father's passing and ushered in a time of peace. The evil mirror became a distant memory, hidden deep within the castle's tunnels, forgotten by all.</p>
+      <p>However, unbeknownst to you, one of your adventurous daughters, enamored with her own beauty, developed an obsession with exploring the castle's hidden corners, a curiosity that could potentially unearth forgotten secrets.</p>`;
+      choiceButton1.textContent = "Go to the very beginning";
+      choiceButton2.textContent = "Exit the game";
+      break;
   }
 }
 
