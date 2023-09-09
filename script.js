@@ -66,8 +66,8 @@ function startGame() {
       <p>Tragically, your journey takes a dark turn as you encounter an assassin, a heartless agent of the Queen's malevolence. This remorseless killer strikes without hesitation, ending your life on your way to the castle.</p>
       <p>Your adventure in the world of Snow White comes to an untimely and tragic end. But fear not, for your journey through time may still hold surprises, and new adventures may await you in different tales and timelines.</p>
       </p>Will you choose to rewind the sands of time and try another path, or will you embark on a new journey altogether? The adventure is yours to shape.</p>`;
-      choiceButton1.textContent = "Reverse the sands of time";
-      choiceButton2.textContent = "Go back to the beginning";
+      choiceButton1.textContent = "Go to the very beginning";
+      choiceButton2.textContent = "Exit the game";
       break;
     case 5:
       //Reverse the sands of time - SEARCH FOR A NEARBY VILLAGE
@@ -187,14 +187,14 @@ function startGame() {
       <p>There, he brings you to a small cottage and claims that seven dwarfs residing there can assist you in your quest to defeat the Malevolent Queen. However, the quaint surroundings and the uncertainty of this new place leave you feeling apprehensive. You worry about being stuck in this remote cottage, far from your home and your mission to clear your name.</p>
       <p>The cottage in the enchanted forest feels both welcoming and mysterious. As you stand at this crossroads, a sense of uncertainty weighs on your mind.</p>
       <ol>
-      <li>Option 1: You can choose to trust the soldier's word and stay with the seven dwarfs. They may hold the key to your success, and their humble cottage could become a stronghold against the Malevolent Queen. But can you truly rely on them?</li>
+      <li>Option 1: You can choose to trust the soldier's word and seek the help of the seven dwarfs. They may hold the key to your success, and their humble cottage could become a stronghold against the Malevolent Queen. But can you truly rely on them?</li>
       <li>Option 2: Alternatively, you can try to convince the soldier to take you to a nearby village. There, you may have a chance to gather allies and resources to bolster your cause. However, this option carries its own set of risks.</li>
       </ol>`;
-      choiceButton1.textContent = " Stay with the Dwarfs";
+      choiceButton1.textContent = "Seek help from the dwarfs";
       choiceButton2.textContent = "Request to visit a nearby village";
       break;
     case 15:
-      //Stay with the Dwarfs
+      //Seek help from the dwarfs
       gameText.innerHTML = `<p>You decide to place your trust in the soldier who has brought you this far and follow him into the cottage nestled deep within the enchanted forest. Inside, you're met by seven dwarfs, each with their distinct personalities, but it becomes apparent that Grumpy is the true leader among them.</p>
       <p>Despite Grumpy's gruff exterior, you sense a willingness in the dwarfs to aid your cause. What surprises you even more is their possession of magical abilities that could prove invaluable in thwarting the Malevolent Queen's plans. They express their willingness to assist you, but their demand is unexpected - they ask for rule over the enchanted forest as their reward.</p>
       <p>The dwarfs' proposal hangs in the air, a weighty decision on your shoulders.</p>
@@ -217,7 +217,7 @@ function startGame() {
       choiceButton2.textContent = "Exit the game";
       break;
     case 17:
-      //Seek Help elsewhere from the dwarfs
+      //case 15 - Seek Help elsewhere from the dwarfs
       gameText.innerHTML = `<p>the dwarfs offer of assistance was both a lifeline and a dilemma. Their unique magical abilities could aid you in vanquishing the Malevolent Queen, but the price they demanded, control over the enchanted forest, weighed heavily on your heart.</p>
       <p>With gratitude, you declined their offer and turned to a loyal soldier for counsel. Moved by pity, the dwarfs proposed a daring plan: journey to a neighboring kingdom where a young prince sought a bride. Marrying him might secure the support needed to confront the Queen.</p>
       <p>Weeks of travel left you hungry, weary, and desperate, but finally, you reached the neighboring kingdom. Fate took an unexpected turn when the prince, entranced by your beauty, fell in love. Your words convinced him of your royal lineage, and he pledged his unwavering support.</p>
@@ -287,7 +287,7 @@ function startGame() {
       //Hand over the mirror to the huntsman
       gameText.innerHTML = `<p>Trusting in the huntsman's integrity, you handed over the malevolent mirror to him, allowing him to depart with a promise to see it destroyed. As he disappeared into the enchanted forest with the cursed object, hope bloomed in your heart.</p>
       <p>However, the Malevolent Queen soon discovered the mirror's loss, and madness consumed her. She relentlessly sought it, resorting to tormenting and questioning her servants, sparing no one she found suspicious. Fear gripped the castle as her desperation grew.</p>
-      <p>In your darkest moments, it seemed as though even your most loyal servants might betray you to save themselves from her wrath. The specter of doom loomed ever nearer, threatening to engulf you.</p>
+      <p>In your darkest moments, it seemed as tho   ugh even your most loyal servants might betray you to save themselves from her wrath. The specter of doom loomed ever nearer, threatening to engulf you.</p>
       <p>But then, when all hope seemed lost, the huntsman returned. With a triumphant air, he claimed that the mirror had met its demise. Skepticism gnawed at your thoughts, but it didn't take long for reality to sink in U+2013 the Malevolent Queen's power had indeed waned.</p>
       <p>Your father, who had languished under her enchantment for so long, awoke to the horrifying reality of the Queen's monstrous deeds. She was swiftly apprehended, tried, and sentenced to death for her unspeakable crimes. In the wake of her demise, your father welcomed you back with open arms, reuniting a family torn asunder by dark enchantments.</p>
       <p>The kingdom, at long last, found peace, and you, Snow White, had triumphed over the darkest of sorcery to reclaim your rightful place by your father's side.</p>`;
@@ -308,19 +308,46 @@ function startGame() {
       break;
   }
 }
-
-// Attach functions to the choice buttons
+// Add event listeners for the choice buttons
 choiceButton1.addEventListener("click", function () {
-  if (gameState === 0) gameState = 1;
-  else if (gameState === 1) gameState = 3;
-  else if (gameState === 2) gameState = 5;
+  if (
+    (gameState === 16) |
+    (gameState === 17) |
+    (gameState === 19) |
+    (gameState === 21) |
+    (gameState === 23) |
+    (gameState === 24) |
+    (gameState === 9) |
+    (gameState === 7) |
+    (gameState === 4) |
+    (gameState === 5) |
+    (gameState === 11)
+  ) {
+    gameState = 0;
+  } else {
+    gameState += 1;
+  }
   startGame();
 });
 
 choiceButton2.addEventListener("click", function () {
-  if (gameState === 0) gameState = 2;
-  else if (gameState === 1) gameState = 4;
-  else if (gameState === 2) gameState = 6;
+  if (
+    (gameState === 16) |
+    (gameState === 17) |
+    (gameState === 19) |
+    (gameState === 21) |
+    (gameState === 23) |
+    (gameState === 24) |
+    (gameState === 9) |
+    (gameState === 7) |
+    (gameState === 4) |
+    (gameState === 5) |
+    (gameState === 11)
+  ) {
+    gameState = 0;
+  } else {
+    gameState += 2;
+  }
   startGame();
 });
 
