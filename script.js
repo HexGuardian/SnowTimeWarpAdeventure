@@ -32,7 +32,7 @@ function startGame() {
       <li>Option 2: Continue Your Journey: The forest stretches endlessly before you, concealing its secrets. You could choose to brave the wilderness, seeking answers elsewhere. But be mindful, the woods hold their own perils, and safety may not be guaranteed.</li>
       </ol>`;
       choiceButton1.textContent = "Enter the Mysterious Cottage";
-      choiceButton2.textContent = "Continue on Your Journey.";
+      choiceButton2.textContent = "Continue on your Journey.";
       break;
     case 2:
       //Enter the mysterious cottage.
@@ -101,6 +101,77 @@ function startGame() {
       choiceButton1.textContent = "Follow the Dwarfs' Warning";
       choiceButton2.textContent = "Open the Door Out of Compassion";
       break;
+    case 7:
+      //You decide to follow the dwarfs warning and ignore the knocking.
+      gameText.innerHTML = `<p>With unwavering resolve, you choose to heed the dwarfs' warning, resisting the temptation to open the door despite the mysterious knock. Little do you know that the dwarfs' magical protections have effectively kept the malevolent Queen at bay. She may continue to plot, but she remains unable to harm you.</p>
+      <p>However, time passes slowly within the safety of the dwarfs' cottage. Years turn into decades as you remain hidden, shielded from the outside world. The malevolent Queen's relentless quest to end your life persists, but her efforts are in vain due to the dwarfs' powerful magic.</p>
+      <p>Finally, the day arrives when the malevolent Queen meets her demise, and her dark reign comes to an end. You are now free to leave the cottage and return to the castle. Yet, as you make your way back to your former home, you are met with a heartbreaking revelation.</p>
+      <p>Your father, believing you had perished, had passed the crown to a distant cousin upon his death. The throne you once called your own is no longer yours to claim.</p>
+      <p>Faced with this bitter truth, you make a life-altering decision. The castle and its trappings no longer hold the allure they once did. Instead, you choose to return to the Enchanted Forest, where your true family resides—the dwarfs who protected you, nurtured you, and became your enduring companions.</p>
+      <p>In the heart of the forest, you find solace, love, and a sense of belonging that the castle could never provide. You live out your days alongside the dwarfs, treasuring the simple and profound bonds of friendship and magic.</p>
+      <p>And so, the tale of Snow White, marked by trials and choices, concludes with a bittersweet but contented chapter. The enchanted forest becomes your true home, and in the midst of nature's beauty, you find your own kind of happily ever after.</p>`;
+      choiceButton1.textContent = "Go to the very beginning";
+      choiceButton2.textContent = "Exit the game";
+      break;
+    case 8:
+      //Open the Door Out of Compassion
+      gameText.innerHTML = `<p>You decide to open the door after all; you were once lost in the forest. Outside stands an old lady peddling goods. She claims to be from a nearby village and noticed smoke from the chimney, which led her to the cottage. She explains that she came to sell her wares to the occupants.</p>
+      <p>However, a hint of suspicion lingers in your mind. You hesitate, pondering the old woman's intentions. In a bid to win your trust, she reveals her basket filled with the most enticing bright red apples. Your mouth waters at the sight of the juicy fruits, a rare treat you haven't savored since living with the dwarfs.</p>
+      <p>Despite your hunger and the alluring aroma of the apples, your wariness prevails. You recall the malevolent Queen's relentless pursuit and her knack for using cunning tactics.</p>
+      <p>However, the old woman, sensing your hesitation, boldly takes a massive bite from the juiciest apple in her basket and offers you one. You attempt to protest, explaining that you lack the means to pay for it.</p>
+      <p>But the old woman, seemingly kind-hearted, agrees to a simple exchange—an apple in return for a glass of water.</p>
+      <p>In this moment of both temptation and caution, you find yourself torn between your longing for the apple's sweetness and the ever-present fear of the malevolent Queen's treachery.</p>
+      <ol>
+      <li>Option 1:: Accept the Apple: Your craving for the apple's sweetness triumphs, and you accept the woman's offer. Hunger and curiosity compel you to take a bite, savoring the long-lost flavor.</li>
+      <li>Option 2: Decline the Apple: Your vigilance prevails, and you politely decline the apple, citing your inability to provide anything in return. Though appreciative of the gesture, you stand firm in your cautious choice.</li>
+      </ol>`;
+      choiceButton1.textContent = "Accept the Apple";
+      choiceButton2.textContent = "Decline the Apple";
+      break;
+    case 9:
+      //If player accepts the apple.
+      gameText.innerHTML = `<p>In a moment of hunger and temptation, you succumb to the allure of the apple, accepting it in exchange for a simple glass of water. At first, everything seems normal as you savor the apple's sweet flavor.</p>
+      <p>However, as you take your third bite, the old woman's laughter pierces the air, and a sudden dread washes over you. You desperately attempt to discard the apple, realizing you should have heeded the dwarfs' warning.</p>
+      <p>As the world around you darkens, you collapse to the ground, expecting the worst. Yet, instead of slipping into death's embrace, you find yourself trapped in a surreal in-between state.</p>
+      <p>Unbeknownst to you, the dwarfs, ever watchful and protective, had woven a powerful protection spell around you. It saved you from the sinister effects of the cursed apple, preventing your untimely demise.</p>
+      <p>Time passes in this enigmatic realm. What feels like years is, in reality, only three days when you are awakened by a kiss. Before you stands a handsome prince from a nearby kingdom. Love has blossomed in his heart for you, even as you remained in this in-between state.</p>
+      <p>He takes you to his kingdom, where a grand marriage ceremony is held, uniting you with the prince. Together, you embark on a journey to reclaim your rightful throne.</p>
+      <p>With the prince's support and the might of his kingdom's army, you return to your homeland. There, you confront the malevolent Queen who had plagued your life. With courage, determination, and the love of your prince, you put an end to the Queen's dark reign and free your father from the enchantment that held him captive.Your kingdom is finally free from the Queen's dark influence, and you rule with wisdom and kindness alongside your beloved prince.</p>
+      <p>In this surprising twist, your journey takes a remarkable turn, guided by love, protection, and the resilience of the human spirit. Snow White reclaims her kingdom, and a new chapter begins, filled with hope, love, and the promise of a brighter future.</p>`;
+      choiceButton1.textContent = "Go to the very beginning";
+      choiceButton2.textContent = "Exit the game";
+      break;
+    case 10:
+      //If player declines the apple
+      gameState.innerHTML = `<p>With the dwarfs' warning still echoing in your mind, you make the cautious choice to decline the apple, despite your inner longing for its sweetness. The old woman graciously accepts your decision but kindly requests a glass of water.</p>
+      <p>Moved by compassion and the memory of your own past struggles, you agree to provide her with the water she seeks. As you turn towards the cottage, intending to fulfill her request, a searing pain suddenly lances through your heart.</p>
+      <p>In shock and disbelief, you look down to find blood staining your chest, a dark bloom spreading across your clothing. Dread overtakes you as the realization sets in: the old woman has stabbed you, and the world begins to blur around you as you collapse.</p>
+      <p>Hours later, you are discovered by the dwarfs, lifeless on their doorstep. Despite their frantic efforts to save you, it's clear that too much time has passed. You had been dead for hours, the victim of a cruel betrayal.</p>
+      <p>With heavy hearts, the dwarfs lay you to rest in the depths of the enchanted forest, a place you had come to call home. The world mourns the loss of Snow White, and a sense of sorrow blankets the land.</p>
+      <p>In this unexpected and tragic turn of events, the tale of "Snow White's Time Warp Adventure" takes an unforeseen path. Your choices, shaped by caution and compassion, lead to an outcome filled with sorrow and regret. The enchanting forest now holds your eternal slumber.</p>`;
+      choiceButton1.textContent = "Go to the very beginning";
+      choiceButton2.textContent = "Exit the game";
+      break;
+    case 11:
+      //case 01- Continue on your journey thread
+      gameText.innerHTML = `<p>With trepidation, you choose to ignore the mysterious cottage in the heart of the enchanted forest, driven by fear of the unknown. After all, who could possibly reside in such an isolated place but monsters?</p>
+      <p>You continue your journey, your hope dwindling with each step as you search for another shelter. However, the vastness of the forest is unforgiving, and you find no refuge or companions along your path.</p>
+      <p>Days turn into a seemingly endless journey, and the harsh realities of the forest take their toll. Hunger and thirst consume you, weakening your resolve.</p>
+      <p>Finally, you succumb to your bodily needs, unable to carry on. As you lie in the heart of the enchanted forest, your strength waning, your journey comes to an untimely and tragic end.</p>
+      <p>In this somber conclusion, the tale of "Snow White's Time Warp Adventure" ends with the harshness of nature, leaving behind a world filled with unanswered questions and unfulfilled destiny.</p>`;
+      choiceButton1.textContent = "Go to the very beginning";
+      choiceButton2.textContent = "Exit the game";
+      break;
+    case 12:
+      //Confront the Malevolent Queen
+      gameText.innerHTML = `<p>AYour decision to boldly confront the Malevolent Queen is unwavering, but the advice of your trusted ally, the Huntsman, gives you pause. The Huntsman's counsel is laced with wisdom, urging you to consider a more cautious path: hiding in plain sight as a servant, gathering allies, and operating quietly to avoid the Queen's gaze.</p>
+      <p>The Queen's power and malevolence are undeniable, and the ever-watchful magic mirror she possesses adds an extra layer of complexity to your predicament. You grapple with the choice before you: a direct approach that asserts your presence or a subtler path that relies on stealth and alliances.</p>
+      <ol>
+      <li>Option 1:Your heart burns with resolve, and you're tempted to directly challenge the Malevolent Queen. You want to face her head-on, hoping that your determination will prevail against her dark magic.</li>
+      <li>Option 2:The Huntsman's plan suggests a more subtle approach. By disguising yourself as a servant, you can work behind the scenes to gather allies and intelligence. It's a patient and strategic path, but it comes with the risk of the Queen's magic mirror discovering your true identity.</li>
+      </ol> `;
+      choiceButton1.textContent = " Directly challenge the queen";
+      choiceButton2.textContent = "Hide in plain sight";
   }
 }
 
