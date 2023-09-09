@@ -66,7 +66,7 @@ function startGame() {
       <p>Tragically, your journey takes a dark turn as you encounter an assassin, a heartless agent of the Queen's malevolence. This remorseless killer strikes without hesitation, ending your life on your way to the castle.</p>
       <p>Your adventure in the world of Snow White comes to an untimely and tragic end. But fear not, for your journey through time may still hold surprises, and new adventures may await you in different tales and timelines.</p>
       </p>Will you choose to rewind the sands of time and try another path, or will you embark on a new journey altogether? The adventure is yours to shape.</p>`;
-      choiceButton1.textContent = "Go to the very beginning";
+      choiceButton1.textContent = "Restart";
       choiceButton2.textContent = "Exit the game";
       break;
     case 5:
@@ -77,7 +77,7 @@ function startGame() {
         <p>Years pass, and you marry a kind soul from the village, raise children, and watch them grow. The village becomes a close-knit family, and you live a fulfilling life far removed from the grandeur of the castle.</p>
         <p>As your life reaches its twilight, you recall that fateful day when you ran away from the dwarfs' cottage and made the choice to seek shelter in the village. A single thought lingers in your mind: "What if?"</p>
         <p>In this quiet and forgotten village, you find your own version of happily ever after, content with the choices you made and the life you lived. The world outside may have forgotten your story, but within the walls of this tiny village, your legacy endures, a testament to the power of choices in the tapestry of time.</p>`;
-      choiceButton1.textContent = "Go to the very beginning";
+      choiceButton1.textContent = "Restart";
       choiceButton2.textContent = "Exit the game";
       break;
     case 6:
@@ -85,7 +85,7 @@ function startGame() {
       gameText.innerHTML = `<p>In the cozy cottage, your days pass harmoniously with the seven dwarfs. Despite initial fears, you discover their warmth and kindness, even Grumpy's, who softens in your presence. You offer your culinary and housekeeping skills in exchange for shelter, and a unique bond forms. They become your family in this quaint and hidden corner of the forest.</p>
 
     <p>However, unbeknownst to you, the malevolent Queen, through her magic mirror, discovers that you are alive. Her wicked plans to eliminate you once and for all are set in motion.</p>
-    <p>In response to the looming threat, the dwarfs caution you not to open the door to anyone other than them when they venture out to cut wood. Their warning echoes in your mind.</p>
+    <p>In response to the looming threat, the dwarfs caution you not to open the door to anyone other than them when they leave for the day. Their warning echoes in your mind.</p>
     <p>One day, while you are alone in the cottage, a soft but persistent knock echoes from the door. In this pivotal moment, you stand before the closed door, torn between your sense of compassion and the dwarfs' stern warning. The memory of the dwarfs' kindness and their status as your newfound family weighs heavily on your heart.</p>
     <p>Yet, the dire threat posed by the malevolent Queen and the dwarfs' unwavering caution echo in your mind. You recall the evil Queen's relentless pursuit, and the knowledge that she will stop at nothing to ensure your demise.</p>
     <p>With a deep breath, you make a choice:</p>
@@ -105,7 +105,7 @@ function startGame() {
       <p>Faced with this bitter truth, you make a life-altering decision. The castle and its trappings no longer hold the allure they once did. Instead, you choose to return to the Enchanted Forest, where your true family resides—the dwarfs who protected you, nurtured you, and became your enduring companions.</p>
       <p>In the heart of the forest, you find solace, love, and a sense of belonging that the castle could never provide. You live out your days alongside the dwarfs, treasuring the simple and profound bonds of friendship and magic.</p>
       <p>And so, the tale of Snow White, marked by trials and choices, concludes with a bittersweet but contented chapter. The enchanted forest becomes your true home, and in the midst of nature's beauty, you find your own kind of happily ever after.</p>`;
-      choiceButton1.textContent = "Go to the very beginning";
+      choiceButton1.textContent = "Restart";
       choiceButton2.textContent = "Exit the game";
       break;
     case 8:
@@ -133,7 +133,7 @@ function startGame() {
       <p>He takes you to his kingdom, where a grand marriage ceremony is held, uniting you with the prince. Together, you embark on a journey to reclaim your rightful throne.</p>
       <p>With the prince's support and the might of his kingdom's army, you return to your homeland. There, you confront the malevolent Queen who had plagued your life. With courage, determination, and the love of your prince, you put an end to the Queen's dark reign and free your father from the enchantment that held him captive.Your kingdom is finally free from the Queen's dark influence, and you rule with wisdom and kindness alongside your beloved prince.</p>
       <p>In this surprising twist, your journey takes a remarkable turn, guided by love, protection, and the resilience of the human spirit. Snow White reclaims her kingdom, and a new chapter begins, filled with hope, love, and the promise of a brighter future.</p>`;
-      choiceButton1.textContent = "Go to the very beginning";
+      choiceButton1.textContent = "Restart";
       choiceButton2.textContent = "Exit the game";
       break;
     case 10:
@@ -144,7 +144,7 @@ function startGame() {
       <p>Hours later, you are discovered by the dwarfs, lifeless on their doorstep. Despite their frantic efforts to save you, it's clear that too much time has passed. You had been dead for hours, the victim of a cruel betrayal.</p>
       <p>With heavy hearts, the dwarfs lay you to rest in the depths of the enchanted forest, a place you had come to call home. The world mourns the loss of Snow White, and a sense of sorrow blankets the land.</p>
       <p>In this unexpected and tragic turn of events, the tale of "Snow White's Time Warp Adventure" takes an unforeseen path. Your choices, shaped by caution and compassion, lead to an outcome filled with sorrow and regret. The enchanting forest now holds your eternal slumber.</p>`;
-      choiceButton1.textContent = "Go to the very beginning";
+      choiceButton1.textContent = "Restart";
       choiceButton2.textContent = "Exit the game";
       break;
     case 11:
@@ -154,7 +154,7 @@ function startGame() {
       <p>Days turn into a seemingly endless journey, and the harsh realities of the forest take their toll. Hunger and thirst consume you, weakening your resolve.</p>
       <p>Finally, you succumb to your bodily needs, unable to carry on. As you lie in the heart of the enchanted forest, your strength waning, your journey comes to an untimely and tragic end.</p>
       <p>In this somber conclusion, the tale of "Snow White's Time Warp Adventure" ends with the harshness of nature, leaving behind a world filled with unanswered questions and unfulfilled destiny.</p>`;
-      choiceButton1.textContent = "Go to the very beginning";
+      choiceButton1.textContent = "Restart";
       choiceButton2.textContent = "Exit the game";
       break;
     case 12:
@@ -213,7 +213,7 @@ function startGame() {
       <p>In a decisive turn of events, your father orders the arrest of the Malevolent Queen and the destruction of the mirror, the source of her dark power. With the Queen's defeat, your kingdom is saved.</p>
       <p>However, the price of your victory is steep. To honor your agreement with the dwarfs, your father grants them rule over the enchanted forest. While this decision secures your kingdom's future, it proves to be deeply unpopular among your subjects. As a result, both you and your father are forced to give up your thrones and live in exile in the nearest kingdom.</p>
       <p>The bittersweet taste of victory lingers as you and your father begin anew in the quiet village, far from the trappings of royalty.</p>`;
-      choiceButton1.textContent = "Go to the very beginning";
+      choiceButton1.textContent = "Restart";
       choiceButton2.textContent = "Exit the game";
       break;
     case 17:
@@ -223,7 +223,7 @@ function startGame() {
       <p>Weeks of travel left you hungry, weary, and desperate, but finally, you reached the neighboring kingdom. Fate took an unexpected turn when the prince, entranced by your beauty, fell in love. Your words convinced him of your royal lineage, and he pledged his unwavering support.</p>
       <p>With the prince by your side, you returned to your kingdom, ready to confront the Malevolent Queen. Fierce battles ensued, and her enchantments resisted, but love and determination carried you through. As her reign crumbled, your father was freed from his enchantment, and your joyful reunion warmed your hearts.</p>
       <p>Together, you toiled to rebuild your kingdom, crafting a brighter future from the ashes of the past. The realm welcomed you back with open arms, grateful for your bravery and the defeat of the evil that had plagued your land.</p>`;
-      choiceButton1.textContent = "Go to the very beginning";
+      choiceButton1.textContent = "Restart";
       choiceButton2.textContent = "Exit the game";
       break;
     case 18:
@@ -234,7 +234,7 @@ function startGame() {
       <p>Cast adrift, you wandered into the enchanted forest, where fate once again intervened. In the heart of the woods, you stumbled upon a quaint cottage inhabited by seven dwarfs. Moved by your plight, they invited you to stay, offering you the simple comforts of their humble abode.</p>
       <p>In the twilight of your life, you found solace and companionship among the dwarfs, sharing in their daily routines and the warmth of their company. Yet, as your days drew to a close, your thoughts often drifted to the soldier, pondering how your destiny might have unfolded had you chosen to escape with him.</p>
       <p>Your story became one of bittersweet reflection, a tapestry woven with the threads of choices made and the haunting specter of what might have been.</p>`;
-      choiceButton1.textContent = "Go to the very beginning";
+      choiceButton1.textContent = "Restart";
       choiceButton2.textContent = "Exit the game";
       break;
     case 19:
@@ -244,7 +244,7 @@ function startGame() {
       <p>Days turned into weeks, and yet the soldier did not return. You were left in a world of uncertainty, never learning of his fate. Despite the efforts of his friend, your attempts to recruit allies in the village proved fruitless. Fear of the Malevolent Queen's reprisal held the villagers in check, and they dared not aid a seemingly insignificant princess.</p>
       <p>In this village, you toiled tirelessly, working from dawn to dusk, fading into the background as time passed. Eventually, even the Malevolent Queen's attention waned, and she forgot about your existence entirely.</p>
       <p>Life took an unexpected turn when you met a traveling merchant, and love blossomed between you. You embarked on journeys to distant lands with your husband, leaving behind the trials of the past and embracing a life filled with love and adventure.</p>`;
-      choiceButton1.textContent = "Go to the very beginning";
+      choiceButton1.textContent = "Restart";
       choiceButton2.textContent = "Exit the game";
       break;
     case 20:
@@ -266,7 +266,7 @@ function startGame() {
       <p>But the mirror's warning about the addictive nature of the magic proved true. When the time came for you to relinquish your power, you found yourself unable to do so. Desperate to keep your power, you hastily promised the mirror that you would only retain it for one year, just long enough to repair the damage done by the evil Queen.</p>
       <p>However, the mirror, with its ancient wisdom, knew it was already too late. As the year passed, you walked a dark and perilous path, succumbing to the seductive allure of beauty and power. With your father's passing, you ascended to the throne as a powerful and feared queen. People from far and wide admired your unmatched beauty and potent magic. But over time, your heart grew as cold and cruel as the evil you had once sought to destroy.</p>
       <p>The cycle continued, and you became the very embodiment of the Malevolent Queen you had vanquished, a ruler whose heart was consumed by darkness and whose thirst for power was unquenchable.</p>`;
-      choiceButton1.textContent = "Go to the very beginning";
+      choiceButton1.textContent = "Restart";
       choiceButton2.textContent = "Exit the game";
       break;
     case 22:
@@ -291,7 +291,7 @@ function startGame() {
       <p>But then, when all hope seemed lost, the huntsman returned. With a triumphant air, he claimed that the mirror had met its demise. Skepticism gnawed at your thoughts, but it didn't take long for reality to sink in U+2013 the Malevolent Queen's power had indeed waned.</p>
       <p>Your father, who had languished under her enchantment for so long, awoke to the horrifying reality of the Queen's monstrous deeds. She was swiftly apprehended, tried, and sentenced to death for her unspeakable crimes. In the wake of her demise, your father welcomed you back with open arms, reuniting a family torn asunder by dark enchantments.</p>
       <p>The kingdom, at long last, found peace, and you, Snow White, had triumphed over the darkest of sorcery to reclaim your rightful place by your father's side.</p>`;
-      choiceButton1.textContent = "Go to the very beginning";
+      choiceButton1.textContent = "Restart";
       choiceButton2.textContent = "Exit the game";
       break;
     case 24:
@@ -303,7 +303,7 @@ function startGame() {
       <p>Relieved and overjoyed, you bid farewell to the dwarfs who had become dear friends and family during your time in the enchanted forest. Reunited with your father, you returned home, where all seemed well.</p>
       <p>Years passed, and you were wed to the huntsman, who had risen to greatness due to his valor during the Malevolent Queen's reign. Together, you ascended to the throne after your father's passing and ushered in a time of peace. The evil mirror became a distant memory, hidden deep within the castle's tunnels, forgotten by all.</p>
       <p>However, unbeknownst to you, one of your adventurous daughters, enamored with her own beauty, developed an obsession with exploring the castle's hidden corners, a curiosity that could potentially unearth forgotten secrets.</p>`;
-      choiceButton1.textContent = "Go to the very beginning";
+      choiceButton1.textContent = "Restart";
       choiceButton2.textContent = "Exit the game";
       break;
   }
@@ -325,6 +325,7 @@ choiceButton1.addEventListener("click", function () {
     gameState === 10 ||
     gameState === 11
   ) {
+    // restart state
     gameState = 0;
   } else if (gameState === 0) {
     gameState = 1;
@@ -355,52 +356,58 @@ choiceButton1.addEventListener("click", function () {
 });
 
 choiceButton2.addEventListener("click", function () {
-  if (
-    gameState === 16 ||
-    gameState === 17 ||
-    gameState === 18 ||
-    gameState === 19 ||
-    gameState === 21 ||
-    gameState === 23 ||
-    gameState === 24 ||
-    gameState === 9 ||
-    gameState === 7 ||
-    gameState === 4 ||
-    gameState === 5 ||
-    gameState === 10 ||
-    gameState === 11
-  ) {
-    gameState = 0;
-  } else if (gameState === 0) {
-    gameState = 12;
-  } else if (gameState === 1) {
-    gameState = 11;
-  } else if (gameState === 2) {
-    gameState = 6;
-  } else if (gameState === 3) {
-    gameState = 5;
-  } else if (gameState === 6) {
-    gameState = 8;
-  } else if (gameState === 8) {
-    //8 Open the Door Out of Compassion
-    gameState = 10; //decline the apple
-  } else if (gameState === 12) {
-    //hide in plain sight
-    gameState = 20;
-  } else if (gameState === 13) {
-    //decline the soldiers offer
-    gameState = 18;
-  } else if (gameState === 14) {
-    //request to visit nearby village
-    gameState = 19;
-  } else if (gameState === 15) {
-    gameState = 17;
-  } else if (gameState === 20) {
-    //distrust mirror
-    gameState = 22;
-  } else if (gameState === 22) {
-    gameState = 24;
+  // Define an array of game over states
+  const gameOverStates = [16, 17, 18, 19, 21, 23, 24, 9, 7, 4, 5, 10, 11];
+
+  if (gameOverStates.includes(gameState)) {
+    // Game Over state
+    gameText.innerHTML = "<p>Game Over</p>";
+    choiceButton1.style.display = "none";
+    choiceButton2.style.display = "none";
+    // Show the reset button
+    resetButton.style.display = "block";
+  } else {
+    // Handle other transitions
+    if (gameState === 0) {
+      gameState = 12;
+    } else if (gameState === 1) {
+      gameState = 11;
+    } else if (gameState === 2) {
+      gameState = 6;
+    } else if (gameState === 3) {
+      gameState = 5;
+    } else if (gameState === 6) {
+      gameState = 8;
+    } else if (gameState === 8) {
+      gameState = 10;
+    } else if (gameState === 12) {
+      gameState = 20;
+    } else if (gameState === 13) {
+      gameState = 18;
+    } else if (gameState === 14) {
+      gameState = 19;
+    } else if (gameState === 15) {
+      gameState = 17;
+    } else if (gameState === 20) {
+      gameState = 22;
+    } else if (gameState === 22) {
+      gameState = 24;
+    }
+    startGame();
   }
+});
+resetButton.addEventListener("click", function () {
+  // Reset the game to its initial state (gameState = 0)
+  gameState = 0;
+
+  // Show both choice buttons again
+  choiceButton1.style.display = "block";
+  choiceButton2.style.display = "block";
+
+  // Hide the reset button
+  resetButton.style.display = "none";
+
+  // Reset the game text to its initial state
   startGame();
 });
 startGame();
