@@ -172,6 +172,78 @@ function startGame() {
       </ol> `;
       choiceButton1.textContent = " Directly challenge the queen";
       choiceButton2.textContent = "Hide in plain sight";
+      break;
+    case 13:
+      //Chooses to Directly challenge the queen
+      gameText.innerHTML = `<p>Your resolve to confront the Malevolent Queen in front of the entire court is unwavering, despite the wisdom in the Huntsman's advice. The threat posed by the magic mirror's relentless surveillance is a constant concern, and you believe that a direct approach is your best chance.</p>
+      <p>However, as the confrontation unfolds before the court, you face an unexpected twist. The Queen, with her cunning words and a spell on your father, manages to turn the entire court against you. Despite your heartfelt pleas and the Huntsman's testimony, your father, under the Queen's spell, condemns you to the dungeon, while the Huntsman is sentenced to death.</p>
+      <p>Days turn into a cold, regret-filled existence in the dungeon, where you are tormented by the weight of your circumstances. However, a glimmer of hope appears in the form of a soldier who offers you a chance to escape.</p>
+      <p>In the damp and dark confines of the dungeon, your hope had nearly dwindled to nothing. Yet, the soldier's unexpected offer presents you with a dilemma that could determine your fate.</p>
+      <ol>
+      <li>Option 1: The soldier's offer may be your only chance at freedom, a means to escape the Queen's clutches. However, you know that accepting this offer might mean losing your only chance to prove your innocence and convince your father of the truth.</li>
+      <li>Despite the allure of escape, you decide to stay in the dungeon, believing that biding your time may lead to another opportunity to clear your name. You fear that this offer might be a sinister ploy by the Queen.</li>
+      </ol>`;
+      choiceButton1.textContent = " Accept the soldier's offer";
+      choiceButton2.textContent = "Decline the offer";
+      break;
+    case 14:
+      //Accept the soldier's offer
+      gameText.innerHTML = `<p>Taking a considerable risk, you choose to accept the soldier's offer of escape, driven by the fear that another chance at freedom might not come your way. True to his word, the soldier arrives at midnight and whisks you away from the dungeon, leading you to the depths of the enchanted forest.</p>
+      <p>There, he brings you to a small cottage and claims that seven dwarfs residing there can assist you in your quest to defeat the Malevolent Queen. However, the quaint surroundings and the uncertainty of this new place leave you feeling apprehensive. You worry about being stuck in this remote cottage, far from your home and your mission to clear your name.</p>
+      <p>The cottage in the enchanted forest feels both welcoming and mysterious. As you stand at this crossroads, a sense of uncertainty weighs on your mind.</p>
+      <ol>
+      <li>Option 1: You can choose to trust the soldier's word and stay with the seven dwarfs. They may hold the key to your success, and their humble cottage could become a stronghold against the Malevolent Queen. But can you truly rely on them?</li>
+      <li>Option 2: Alternatively, you can try to convince the soldier to take you to a nearby village. There, you may have a chance to gather allies and resources to bolster your cause. However, this option carries its own set of risks.</li>
+      </ol>`;
+      choiceButton1.textContent = " Stay with the Dwarfs";
+      choiceButton2.textContent = "Request to visit a nearby village";
+      break;
+    case 15:
+      //Stay with the Dwarfs
+      gameText.innerHTML = `<p>You decide to place your trust in the soldier who has brought you this far and follow him into the cottage nestled deep within the enchanted forest. Inside, you're met by seven dwarfs, each with their distinct personalities, but it becomes apparent that Grumpy is the true leader among them.</p>
+      <p>Despite Grumpy's gruff exterior, you sense a willingness in the dwarfs to aid your cause. What surprises you even more is their possession of magical abilities that could prove invaluable in thwarting the Malevolent Queen's plans. They express their willingness to assist you, but their demand is unexpected - they ask for rule over the enchanted forest as their reward.</p>
+      <p>The dwarfs' proposal hangs in the air, a weighty decision on your shoulders.</p>
+      <ol>
+      <li>Option 1: You decide to accept the dwarfs' condition, believing that their magical abilities and support are crucial in your quest to confront the Malevolent Queen. However, you worry about how your subjects might react to this decision in the future.</li>
+      <li>Option 2:The cost of granting the enchanted forest to the dwarfs seems too high a price to pay, and you choose to seek help elsewhere. You'll explore other avenues for allies and resources to take on the Queen.
+      </li>
+      </ol>`;
+      choiceButton1.textContent = " Accept the Dwarfs' Condition";
+      choiceButton2.textContent = " Seek Help Elsewhere";
+      break;
+    case 16:
+      //You decide to accept the Dwarf's condition.
+      gameText.innerHTML = `<p>Despite your initial misgivings about the dwarfs' demand for control over the enchanted forest, you choose to accept their offer, driven by the urgency of your mission to defeat the Malevolent Queen. In return for their assistance, the dwarfs gift you a special artifact capable of breaking the Queen's enchantments.</p>
+      <p>With the aid of the soldier and his allies, you execute a daring plan to infiltrate the palace, utilizing secret passages to reach your father, who has been ensnared by the Queen's enchantments. Successful in your endeavor, your father is freed, and he comes to recognize the depth of the Queen's malevolence.</p>
+      <p>In a decisive turn of events, your father orders the arrest of the Malevolent Queen and the destruction of the mirror, the source of her dark power. With the Queen's defeat, your kingdom is saved.</p>
+      <p>However, the price of your victory is steep. To honor your agreement with the dwarfs, your father grants them rule over the enchanted forest. While this decision secures your kingdom's future, it proves to be deeply unpopular among your subjects. As a result, both you and your father are forced to give up your thrones and live in exile in the nearest kingdom.</p>
+      <p>The bittersweet taste of victory lingers as you and your father begin anew in the quiet village, far from the trappings of royalty.</p>`;
+      choiceButton1.textContent = "Go to the very beginning";
+      choiceButton2.textContent = "Exit the game";
+      break;
+    case 17:
+      //Seek Help elsewhere
+      gameText.innerHTML = `<p>the dwarfs offer of assistance was both a lifeline and a dilemma. Their unique magical abilities could aid you in vanquishing the Malevolent Queen, but the price they demanded, control over the enchanted forest, weighed heavily on your heart.</p>
+      <p>With gratitude, you declined their offer and turned to a loyal soldier for counsel. Moved by pity, the dwarfs proposed a daring plan: journey to a neighboring kingdom where a young prince sought a bride. Marrying him might secure the support needed to confront the Queen.</p>
+      <p>Weeks of travel left you hungry, weary, and desperate, but finally, you reached the neighboring kingdom. Fate took an unexpected turn when the prince, entranced by your beauty, fell in love. Your words convinced him of your royal lineage, and he pledged his unwavering support.</p>
+      <p>With the prince by your side, you returned to your kingdom, ready to confront the Malevolent Queen. Fierce battles ensued, and her enchantments resisted, but love and determination carried you through. As her reign crumbled, your father was freed from his enchantment, and your joyful reunion warmed your hearts.</p>
+      <p>Together, you toiled to rebuild your kingdom, crafting a brighter future from the ashes of the past. The realm welcomed you back with open arms, grateful for your bravery and the defeat of the evil that had plagued your land.</p>`;
+      choiceButton1.textContent = "Go to the very beginning";
+      choiceButton2.textContent = "Exit the game";
+      break;
+    case 18:
+      //Case 14 - Request to Visit a Nearby Village
+      gameText.innerHTML = `<p>Despite the soldier's insistence that the dwarfs could be of assistance, your confidence wavered. How could they, living secluded in the heart of the forest, offer meaningful aid? With your conviction firm, you persuaded the soldier to take you to a nearby village, where you hoped to gather allies.</p>
+      <p>Reluctantly, the soldier obeyed your wishes and guided you to the village of his childhood. There, he placed you in the care of one of his friends, promising to return with additional help. He left you with hope in your heart and assurances from his friend that you would be protected.</p>
+      <p>Days turned into weeks, and yet the soldier did not return. You were left in a world of uncertainty, never learning of his fate. Despite the efforts of his friend, your attempts to recruit allies in the village proved fruitless. Fear of the Malevolent Queen's reprisal held the villagers in check, and they dared not aid a seemingly insignificant princess.</p>
+      <p>In this village, you toiled tirelessly, working from dawn to dusk, fading into the background as time passed. Eventually, even the Malevolent Queen's attention waned, and she forgot about your existence entirely.</p>
+      <p>Life took an unexpected turn when you met a traveling merchant, and love blossomed between you. You embarked on journeys to distant lands with your husband, leaving behind the trials of the past and embracing a life filled with love and adventure.</p>`;
+      choiceButton1.textContent = "Go to the very beginning";
+      choiceButton2.textContent = "Exit the game";
+      break;
+    case 19:
+      //Case 12 - Hide in plain sight
+      gameText.HTML = ``;
   }
 }
 
