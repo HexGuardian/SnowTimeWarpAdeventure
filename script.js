@@ -311,44 +311,96 @@ function startGame() {
 // Add event listeners for the choice buttons
 choiceButton1.addEventListener("click", function () {
   if (
-    (gameState === 16) |
-    (gameState === 17) |
-    (gameState === 19) |
-    (gameState === 21) |
-    (gameState === 23) |
-    (gameState === 24) |
-    (gameState === 9) |
-    (gameState === 7) |
-    (gameState === 4) |
-    (gameState === 5) |
-    (gameState === 11)
+    gameState === 16 ||
+    gameState === 17 ||
+    gameState === 18 ||
+    gameState === 19 ||
+    gameState === 21 ||
+    gameState === 23 ||
+    gameState === 24 ||
+    gameState === 9 ||
+    gameState === 7 ||
+    gameState === 4 ||
+    gameState === 5 ||
+    gameState === 10 ||
+    gameState === 11
   ) {
     gameState = 0;
-  } else {
-    gameState += 1;
+  } else if (gameState === 0) {
+    gameState = 1;
+  } else if (gameState === 1) {
+    gameState = 2;
+  } else if (gameState === 2) {
+    gameState = 3;
+  } else if (gameState === 3) {
+    gameState = 4;
+  } else if (gameState === 6) {
+    gameState = 7;
+  } else if (gameState === 8) {
+    gameState = 9;
+  } else if (gameState === 12) {
+    gameState = 13;
+  } else if (gameState === 13) {
+    gameState = 14;
+  } else if (gameState === 14) {
+    gameState = 15;
+  } else if (gameState === 15) {
+    gameState = 16;
+  } else if (gameState === 20) {
+    gameState = 21;
+  } else if (gameState === 22) {
+    gameState = 23;
   }
   startGame();
 });
 
 choiceButton2.addEventListener("click", function () {
   if (
-    (gameState === 16) |
-    (gameState === 17) |
-    (gameState === 19) |
-    (gameState === 21) |
-    (gameState === 23) |
-    (gameState === 24) |
-    (gameState === 9) |
-    (gameState === 7) |
-    (gameState === 4) |
-    (gameState === 5) |
-    (gameState === 11)
+    gameState === 16 ||
+    gameState === 17 ||
+    gameState === 18 ||
+    gameState === 19 ||
+    gameState === 21 ||
+    gameState === 23 ||
+    gameState === 24 ||
+    gameState === 9 ||
+    gameState === 7 ||
+    gameState === 4 ||
+    gameState === 5 ||
+    gameState === 10 ||
+    gameState === 11
   ) {
     gameState = 0;
-  } else {
-    gameState += 2;
+  } else if (gameState === 0) {
+    gameState = 12;
+  } else if (gameState === 1) {
+    gameState = 11;
+  } else if (gameState === 2) {
+    gameState = 6;
+  } else if (gameState === 3) {
+    gameState = 5;
+  } else if (gameState === 6) {
+    gameState = 8;
+  } else if (gameState === 8) {
+    //8 Open the Door Out of Compassion
+    gameState = 10; //decline the apple
+  } else if (gameState === 12) {
+    //hide in plain sight
+    gameState = 20;
+  } else if (gameState === 13) {
+    //decline the soldiers offer
+    gameState = 18;
+  } else if (gameState === 14) {
+    //request to visit nearby village
+    gameState = 19;
+  } else if (gameState === 15) {
+    gameState = 17;
+  } else if (gameState === 20) {
+    //distrust mirror
+    gameState = 22;
+  } else if (gameState === 22) {
+    gameState = 24;
   }
   startGame();
 });
-
 startGame();
