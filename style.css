@@ -1,13 +1,14 @@
 * {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   background-color: #303030;
   color: #e4e1e1;
   max-width: 100%;
 }
 h1 {
   font-size: 2.5rem;
-  padding: 1.5rem 0 0 0.5rem;
-  margin: 3rem 0 0 0.5rem;
+  padding: 3rem 3rem 0 0.5rem;
+  margin: auto;
   text-transform: uppercase;
 }
 
@@ -16,22 +17,31 @@ h1 {
   flex-direction: column;
   align-items: center;
 }
-.mainText {
-  margin: 1rem 0;
-  text-align: justify;
-  font-weight: bold;
-  font-style: italics;
-  font-size: 0.8rem;
+.mainText,
+#gameContainer {
   width: 80%;
+  text-align: justify;
+  margin: auto;
+}
+.mainText {
+  padding: 1rem 0 1rem 0;
+  font-weight: bold;
+  font-size: 0.9rem;
 }
 #gameContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
   font-size: 1.1rem;
   padding: 1rem 2rem;
-  text-align: justify;
-  margin: auto;
-  border: inset 2px black;
+  border: inset 2px rgb(57, 49, 49);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#gameText {
+  line-height: 1.5rem;
+  padding: 1rem 0;
+}
+li {
+  list-style: none;
+  padding: 1rem;
 }

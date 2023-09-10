@@ -18,7 +18,7 @@ function startGame() {
       <li>Option 2: Confront the Malevolent Queen: Confront the Queen head-on, challenging her wickedness and demanding answers. But be warned, the path to confronting the Queen is fraught with danger and intrigue.</li>
       </ol>`;
 
-      choiceButton1.textContent = "Escape to the Enchanted Forest:";
+      choiceButton1.textContent = "Escape to the Enchanted Forest";
       choiceButton2.textContent = "Confront the Malevolent Queen";
       break;
 
