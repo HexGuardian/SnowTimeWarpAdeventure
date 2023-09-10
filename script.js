@@ -64,8 +64,8 @@ function startGame() {
       gameText.innerHTML = `<p>With doubts about your safety in the Enchanted Forest and a sense of responsibility toward your royal heritage, you decide to return to the castle. After all, you reason, as a princess, there may still be loyal supporters within the castle walls. You acknowledge that running away might not have been the wisest choice.</p>
       <p>As you cautiously make your way back to the castle, your heart heavy with uncertainty, little do you know that the malevolent Queen had anticipated your potential return. She had taken measures to ensure your fate remained sealed.</p>
       <p>Tragically, your journey takes a dark turn as you encounter an assassin, a heartless agent of the Queen's malevolence. This remorseless killer strikes without hesitation, ending your life on your way to the castle.</p>
-      <p>Your adventure in the world of Snow White comes to an untimely and tragic end. But fear not, for your journey through time may still hold surprises, and new adventures may await you in different tales and timelines.</p>
-      </p>Will you choose to rewind the sands of time and try another path, or will you embark on a new journey altogether? The adventure is yours to shape.</p>`;
+      <p>Your adventure in the world of Snow White comes to an untimely and tragic end. But fear not, for your journey through time may still hold surprises, and new adventures may await you in different tales and timelines.</p>`;
+
       choiceButton1.textContent = "Restart";
       choiceButton2.textContent = "Exit the game";
       break;
@@ -152,14 +152,13 @@ function startGame() {
       gameText.innerHTML = `<p>With trepidation, you choose to ignore the mysterious cottage in the heart of the enchanted forest, driven by fear of the unknown. After all, who could possibly reside in such an isolated place but monsters?</p>
       <p>You continue your journey, your hope dwindling with each step as you search for another shelter. However, the vastness of the forest is unforgiving, and you find no refuge or companions along your path.</p>
       <p>Days turn into a seemingly endless journey, and the harsh realities of the forest take their toll. Hunger and thirst consume you, weakening your resolve.</p>
-      <p>Finally, you succumb to your bodily needs, unable to carry on. As you lie in the heart of the enchanted forest, your strength waning, your journey comes to an untimely and tragic end.</p>
-      <p>In this somber conclusion, the tale of "Snow White's Time Warp Adventure" ends with the harshness of nature, leaving behind a world filled with unanswered questions and unfulfilled destiny.</p>`;
+      <p>Finally, you succumb to your bodily needs, unable to carry on. As you lie in the heart of the enchanted forest, your strength waning, your journey comes to an untimely and tragic end.</p>`;
       choiceButton1.textContent = "Restart";
       choiceButton2.textContent = "Exit the game";
       break;
     case 12:
       //Confront the Malevolent Queen
-      gameText.innerHTML = `<p>AYour decision to boldly confront the Malevolent Queen is unwavering, but the advice of your trusted ally, the Huntsman, gives you pause. The Huntsman's counsel is laced with wisdom, urging you to consider a more cautious path: hiding in plain sight as a servant, gathering allies, and operating quietly to avoid the Queen's gaze.</p>
+      gameText.innerHTML = `<p>Your decision to boldly confront the Malevolent Queen is unwavering, but the advice of your trusted ally, the Huntsman, gives you pause. The Huntsman's counsel is laced with wisdom, urging you to consider a more cautious path: hiding in plain sight as a servant, gathering allies, and operating quietly to avoid the Queen's gaze.</p>
       <p>The Queen's power and malevolence are undeniable, and the ever-watchful magic mirror she possesses adds an extra layer of complexity to your predicament. You grapple with the choice before you: a direct approach that asserts your presence or a subtler path that relies on stealth and alliances.</p>
       <ol>
       <li>Option 1:Your heart burns with resolve, and you're tempted to directly challenge the Malevolent Queen. You want to face her head-on, hoping that your determination will prevail against her dark magic.</li>

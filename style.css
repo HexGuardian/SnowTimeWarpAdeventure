@@ -1,22 +1,19 @@
 * {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  background-color: #303030;
-  color: #e4e1e1;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #183d3d;
+  color: rgba(234, 240, 238);
   max-width: 100%;
 }
 h1 {
   font-size: 2.5rem;
-  padding: 3rem 3rem 0 0.5rem;
+  padding: 4rem 0 0 0;
   margin: auto;
   text-transform: uppercase;
+  text-align: center;
+  font-family: "Merienda", cursive, serif;
+  font-weight: 800;
 }
 
-.story {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .mainText,
 #gameContainer {
   width: 80%;
@@ -33,15 +30,60 @@ h1 {
   flex-direction: column;
   align-items: center;
   font-size: 1.1rem;
-  padding: 1rem 2rem;
-  border: inset 2px rgb(57, 49, 49);
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 0 1rem 2rem 1rem;
+  border: inset 2px rgb(147, 177, 166);
+  box-shadow: 10px 10px 15px rgb(4, 13, 18);
 }
 #gameText {
-  line-height: 1.5rem;
-  padding: 1rem 0;
+  line-height: 1.3rem;
+  padding: 0.5rem 0;
 }
 li {
-  list-style: none;
-  padding: 1rem;
+  list-style: square;
+  padding: 1rem 0;
+}
+
+#choiceButton1,
+#choiceButton2 {
+  margin: 0.5rem 0;
+}
+
+#choiceButton1,
+#choiceButton2,
+#resetButton {
+  /*Variables*/
+  --button_radius: 0.75em;
+  --button_color: #e8e8e8;
+  --button_outline_color: #000000;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  border-radius: var(--button_radius);
+  /* background: var(--button_outline_color); */
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid var(--button_outline_color);
+  border-radius: var(--button_radius);
+  padding: 0.75em 1.5em;
+  background: var(--button_color);
+  color: var(--button_outline_color);
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease;
+  -webkit-border-radius: var(--button_radius);
+  -moz-border-radius: var(--button_radius);
+  -ms-border-radius: var(--button_radius);
+  -o-border-radius: var(--button_radius);
+}
+button:hover #choiceButton1,
+#choiceButton2,
+#resetButton {
+  /* Pull the button upwards when hovered */
+  transform: translateY(-0.33em);
+}
+
+button:active #choiceButton1,
+#choiceButton2,
+#resetButton {
+  /* Push the button downwards when pressed */
+  transform: translateY(0);
 }
